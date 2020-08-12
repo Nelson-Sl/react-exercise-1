@@ -18,6 +18,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -28,6 +29,7 @@ module.exports = {
   plugins: ['import', 'react'],
   ignorePatterns: ['node_modules/'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'off',
+    'react/prop-types': 'off',
   },
 };
